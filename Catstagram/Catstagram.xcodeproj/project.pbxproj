@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A27078DB27EDDBCC00A2E952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27078DA27EDDBCC00A2E952 /* AppDelegate.swift */; };
 		A27078DD27EDDBCC00A2E952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27078DC27EDDBCC00A2E952 /* SceneDelegate.swift */; };
-		A27078DF27EDDBCC00A2E952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27078DE27EDDBCC00A2E952 /* ViewController.swift */; };
 		A27078E227EDDBCC00A2E952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27078E027EDDBCC00A2E952 /* Main.storyboard */; };
 		A27078E427EDDBD000A2E952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27078E327EDDBD000A2E952 /* Assets.xcassets */; };
 		A27078E727EDDBD000A2E952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27078E527EDDBD000A2E952 /* LaunchScreen.storyboard */; };
+		A27D33B727F45AB3006DF550 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33B627F45AB3006DF550 /* LoginViewController.swift */; };
+		A27D33B927F468D7006DF550 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33B827F468D7006DF550 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A27078D727EDDBCC00A2E952 /* Catstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27078DA27EDDBCC00A2E952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27078DC27EDDBCC00A2E952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A27078DE27EDDBCC00A2E952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A27078E127EDDBCC00A2E952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A27078E327EDDBD000A2E952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27078E627EDDBD000A2E952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27078E827EDDBD000A2E952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27D33B627F45AB3006DF550 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A27D33B827F468D7006DF550 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				A27078DA27EDDBCC00A2E952 /* AppDelegate.swift */,
 				A27078DC27EDDBCC00A2E952 /* SceneDelegate.swift */,
-				A27078DE27EDDBCC00A2E952 /* ViewController.swift */,
 				A27078E027EDDBCC00A2E952 /* Main.storyboard */,
 				A27078E327EDDBD000A2E952 /* Assets.xcassets */,
 				A27078E527EDDBD000A2E952 /* LaunchScreen.storyboard */,
 				A27078E827EDDBD000A2E952 /* Info.plist */,
+				A27D33B627F45AB3006DF550 /* LoginViewController.swift */,
+				A27D33B827F468D7006DF550 /* RegisterViewController.swift */,
 			);
 			path = Catstagram;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27078DF27EDDBCC00A2E952 /* ViewController.swift in Sources */,
+				A27D33B727F45AB3006DF550 /* LoginViewController.swift in Sources */,
 				A27078DB27EDDBCC00A2E952 /* AppDelegate.swift in Sources */,
 				A27078DD27EDDBCC00A2E952 /* SceneDelegate.swift in Sources */,
+				A27D33B927F468D7006DF550 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
