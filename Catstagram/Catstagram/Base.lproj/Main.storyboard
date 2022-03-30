@@ -310,6 +310,12 @@
                             <constraint firstItem="mJn-ud-Vte" firstAttribute="centerX" secondItem="n6M-Dk-pM3" secondAttribute="centerX" id="znW-QM-8U0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="oom-gD-8vk" id="Ugl-mu-eux"/>
+                        <outlet property="nameTextField" destination="ZEf-3X-5hx" id="JgK-hJ-FWB"/>
+                        <outlet property="nicknameTextField" destination="ilR-Yh-FdG" id="S9o-bN-xOh"/>
+                        <outlet property="passwordTextField" destination="Zc0-h2-GwX" id="cg8-yw-E4A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbf-Kx-d5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
