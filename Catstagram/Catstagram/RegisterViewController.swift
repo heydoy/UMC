@@ -9,6 +9,15 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     // MARK: - Properties
+    
+    var email: String = ""
+    var name: String = ""
+    var nickName: String = ""
+    var password: String = ""
+    
+    var userInfo: ((UserInfo) -> Void)?
+    
+    
     //  유효성 검사를 위한 프로퍼티
     var isValidEmail = false {
         didSet {
@@ -52,8 +61,6 @@ class RegisterViewController: UIViewController {
     }
     
     // button
-
-    
     @IBOutlet weak var popToLoginButton: UIButton!
     
     // MARK: - Lifecycle
@@ -79,14 +86,22 @@ class RegisterViewController: UIViewController {
         switch sender {
         case emailTextField:
             self.isValidEmail = text.isValidEmail()
+            self.email = text
+            
         case nameTextField:
             // 글자수만 2자 이상으로 확인
             self.isValidName = text.count > 2
+            self.name = text
+            
         case nicknameTextField:
             // 글자수만 2자 이상으로 확인
             self.isValidNickname = text.count > 2
+            self.nickName = text
+            
         case passwordTextField:
             self.isValidPasssword = text.isValidPassword()
+            self.password = text
+            
         default:
             fatalError("Missing TextField")
         }
@@ -98,6 +113,20 @@ class RegisterViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    
+    
+    @IBAction func registerButtonDidTapped(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+        
+        let userInfo = UserInfo(
+            email: self.email,
+            name: self.name,
+            nickName: self.nickName,
+            password: self.password
+        )
+        
+        self.userInfo?(userInfo)
+    }
     
     
     // MARK: - Helpers
