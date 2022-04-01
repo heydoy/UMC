@@ -51,11 +51,23 @@ class RegisterViewController: UIViewController {
         [emailTextField, nameTextField, nicknameTextField, passwordTextField]
     }
     
+    // button
+
+    
+    @IBOutlet weak var popToLoginButton: UIButton!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextField()
+        
+        // 직접 corner radius를 주는 방법
+       //signupButton.layer.cornerRadius  = 100
+        
+        setupAttribute()
+        
+        // bug fix
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
     }
     
     // MARK: - Actions
@@ -78,9 +90,14 @@ class RegisterViewController: UIViewController {
         default:
             fatalError("Missing TextField")
         }
-        
-        
     }
+    
+    @IBAction func backButtonDidTapped(_ sender: UIBarButtonItem) {
+        // 뒤로가기. 이전화면으로 돌아가는 것을  Pop View Controller라고 한다.
+        // Navigation Controller가 Embeded 되어야 사용할 수 있음.
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     
     
     // MARK: - Helpers
@@ -118,6 +135,28 @@ class RegisterViewController: UIViewController {
         }
         
     }
+    private func setupAttribute() {
+        // poptologin button 글자별 색상 변경
+        
+        let text1 = "계정이 있으신가요?"
+        let text2 = "로그인"
+        
+        let font1 = UIFont.systemFont(ofSize: 13)
+        let font2 = UIFont.boldSystemFont(ofSize: 13)
+        
+        let color1 = UIColor.darkGray
+        let color2 = UIColor.facebookColor!
+        
+        let attributes = generateButtonAttribute(
+            self.popToLoginButton,
+            texts: text1, text2,
+            fonts: font1, font2,
+            colors: color1, color2)
+        
+        self.popToLoginButton.setAttributedTitle(attributes, for: .normal) // 버튼의 일반적인 상태에서 적용한다는 뜻
+        
+    }
+    
 }
 
 // 정규표현식

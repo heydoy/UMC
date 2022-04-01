@@ -14,6 +14,9 @@
 		A27078E727EDDBD000A2E952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27078E527EDDBD000A2E952 /* LaunchScreen.storyboard */; };
 		A27D33B727F45AB3006DF550 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33B627F45AB3006DF550 /* LoginViewController.swift */; };
 		A27D33B927F468D7006DF550 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33B827F468D7006DF550 /* RegisterViewController.swift */; };
+		A27D33BB27F488FC006DF550 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33BA27F488FC006DF550 /* UIView+Extension.swift */; };
+		A27D33BD27F594F0006DF550 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33BC27F594F0006DF550 /* UIViewController+Extension.swift */; };
+		A27D33BF27F66F34006DF550 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33BE27F66F34006DF550 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		A27078E827EDDBD000A2E952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27D33B627F45AB3006DF550 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A27D33B827F468D7006DF550 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A27D33BA27F488FC006DF550 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A27D33BC27F594F0006DF550 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A27D33BE27F66F34006DF550 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				A27078E827EDDBD000A2E952 /* Info.plist */,
 				A27D33B627F45AB3006DF550 /* LoginViewController.swift */,
 				A27D33B827F468D7006DF550 /* RegisterViewController.swift */,
+				A27D33BE27F66F34006DF550 /* UIColor+Extension.swift */,
+				A27D33BA27F488FC006DF550 /* UIView+Extension.swift */,
+				A27D33BC27F594F0006DF550 /* UIViewController+Extension.swift */,
 			);
 			path = Catstagram;
 			sourceTree = "<group>";
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27D33BF27F66F34006DF550 /* UIColor+Extension.swift in Sources */,
+				A27D33BD27F594F0006DF550 /* UIViewController+Extension.swift in Sources */,
 				A27D33B727F45AB3006DF550 /* LoginViewController.swift in Sources */,
 				A27078DB27EDDBCC00A2E952 /* AppDelegate.swift in Sources */,
 				A27078DD27EDDBCC00A2E952 /* SceneDelegate.swift in Sources */,
+				A27D33BB27F488FC006DF550 /* UIView+Extension.swift in Sources */,
 				A27D33B927F468D7006DF550 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
