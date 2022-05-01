@@ -23,6 +23,8 @@
 		A27D33BD27F594F0006DF550 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33BC27F594F0006DF550 /* UIViewController+Extension.swift */; };
 		A27D33BF27F66F34006DF550 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33BE27F66F34006DF550 /* UIColor+Extension.swift */; };
 		A27D33C127F6E647006DF550 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D33C027F6E647006DF550 /* UserInfo.swift */; };
+		A2EBA77E281E93D40023197C /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EBA77C281E93D40023197C /* StoryCollectionViewCell.swift */; };
+		A2EBA77F281E93D40023197C /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EBA77D281E93D40023197C /* StoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		A27D33BC27F594F0006DF550 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A27D33BE27F66F34006DF550 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A27D33C027F6E647006DF550 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A2EBA77C281E93D40023197C /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2EBA77D281E93D40023197C /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				A211D138281E11A80048331A /* FeedTableViewCell.xib */,
 				A211D13B281E273C0048331A /* StoryTableViewCell.swift */,
 				A211D13C281E273C0048331A /* StoryTableViewCell.xib */,
+				A2EBA77C281E93D40023197C /* StoryCollectionViewCell.swift */,
+				A2EBA77D281E93D40023197C /* StoryCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 				A211D13A281E11A80048331A /* FeedTableViewCell.xib in Resources */,
 				A27078E427EDDBD000A2E952 /* Assets.xcassets in Resources */,
 				A211D13E281E273C0048331A /* StoryTableViewCell.xib in Resources */,
+				A2EBA77F281E93D40023197C /* StoryCollectionViewCell.xib in Resources */,
 				A27078E227EDDBCC00A2E952 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +197,7 @@
 				A27D33BD27F594F0006DF550 /* UIViewController+Extension.swift in Sources */,
 				A27D33B727F45AB3006DF550 /* LoginViewController.swift in Sources */,
 				A211D13D281E273C0048331A /* StoryTableViewCell.swift in Sources */,
+				A2EBA77E281E93D40023197C /* StoryCollectionViewCell.swift in Sources */,
 				A27078DB27EDDBCC00A2E952 /* AppDelegate.swift in Sources */,
 				A27D33C127F6E647006DF550 /* UserInfo.swift in Sources */,
 				A211D130281D7E2E0048331A /* HomeViewController.swift in Sources */,
