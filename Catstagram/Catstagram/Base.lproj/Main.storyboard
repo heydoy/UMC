@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4YF-IM-PJc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="049-n8-fyZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -185,23 +185,87 @@
         <!--Home-->
         <scene sceneID="LyP-jN-Ahs">
             <objects>
-                <viewController id="mM0-4w-ZVJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="mM0-4w-ZVJ" customClass="HomeViewController" customModule="Catstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vis-LQ-XwI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyo-Bw-GVV">
-                                <rect key="frame" x="155" y="391" width="104" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-cX-wWm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catstagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="iir-0I-GX3">
+                                        <rect key="frame" x="15" y="5" width="140" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="Joh-gZ-DUT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xn-ZB-fCl">
+                                        <rect key="frame" x="379" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="5Fh-8R-QRo"/>
+                                            <constraint firstAttribute="width" constant="20" id="JE1-B8-Qg5"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_home_send"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vB-JS-Gyi">
+                                        <rect key="frame" x="334" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Ni4-8i-hoL"/>
+                                            <constraint firstAttribute="height" constant="20" id="sbG-fI-v1d"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_home_heart"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNw-nC-XgP">
+                                        <rect key="frame" x="289" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="azm-j9-Oxd"/>
+                                            <constraint firstAttribute="height" constant="20" id="cEi-ev-6ya"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_my_upload"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="0vB-JS-Gyi" firstAttribute="centerY" secondItem="Vc6-cX-wWm" secondAttribute="centerY" id="JPp-Ur-4w9"/>
+                                    <constraint firstItem="iir-0I-GX3" firstAttribute="leading" secondItem="Vc6-cX-wWm" secondAttribute="leading" constant="15" id="PwM-iI-En6"/>
+                                    <constraint firstAttribute="height" constant="50" id="Y2J-0i-HrH"/>
+                                    <constraint firstItem="iir-0I-GX3" firstAttribute="centerY" secondItem="Vc6-cX-wWm" secondAttribute="centerY" id="d9L-5w-GXb"/>
+                                    <constraint firstItem="0vB-JS-Gyi" firstAttribute="leading" secondItem="oNw-nC-XgP" secondAttribute="trailing" constant="25" id="fYP-rV-HZN"/>
+                                    <constraint firstItem="1Xn-ZB-fCl" firstAttribute="centerY" secondItem="Vc6-cX-wWm" secondAttribute="centerY" id="lV9-Wi-GSV"/>
+                                    <constraint firstItem="oNw-nC-XgP" firstAttribute="centerY" secondItem="Vc6-cX-wWm" secondAttribute="centerY" id="wdV-Qi-AhP"/>
+                                    <constraint firstAttribute="bottom" secondItem="iir-0I-GX3" secondAttribute="bottom" constant="5" id="wvy-Zh-VrY"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Xn-ZB-fCl" secondAttribute="trailing" constant="15" id="xbA-GP-VaV"/>
+                                    <constraint firstItem="1Xn-ZB-fCl" firstAttribute="leading" secondItem="0vB-JS-Gyi" secondAttribute="trailing" constant="25" id="yGH-P2-oUA"/>
+                                    <constraint firstItem="iir-0I-GX3" firstAttribute="top" secondItem="Vc6-cX-wWm" secondAttribute="top" constant="5" id="zGF-Mq-P5z"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="irM-ch-52w">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="acA-nr-Fjl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="acA-nr-Fjl" firstAttribute="trailing" secondItem="irM-ch-52w" secondAttribute="trailing" id="8E1-EH-bmf"/>
+                            <constraint firstItem="Vc6-cX-wWm" firstAttribute="leading" secondItem="acA-nr-Fjl" secondAttribute="leading" id="8QP-Uh-Qkn"/>
+                            <constraint firstItem="acA-nr-Fjl" firstAttribute="bottom" secondItem="irM-ch-52w" secondAttribute="bottom" id="LRK-hf-jyv"/>
+                            <constraint firstItem="irM-ch-52w" firstAttribute="top" secondItem="Vc6-cX-wWm" secondAttribute="bottom" id="cHX-44-7K7"/>
+                            <constraint firstItem="Vc6-cX-wWm" firstAttribute="top" secondItem="acA-nr-Fjl" secondAttribute="top" id="tLa-75-4T2"/>
+                            <constraint firstItem="acA-nr-Fjl" firstAttribute="trailing" secondItem="Vc6-cX-wWm" secondAttribute="trailing" id="tcY-p3-Sp8"/>
+                            <constraint firstItem="irM-ch-52w" firstAttribute="leading" secondItem="acA-nr-Fjl" secondAttribute="leading" id="zNr-2Y-R95"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="5Vk-xO-wcC"/>
+                    <connections>
+                        <outlet property="tableView" destination="irM-ch-52w" id="HQs-5D-Yjr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLD-R0-biq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -442,6 +506,9 @@
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
+        <image name="ic_home_heart" width="512" height="512"/>
+        <image name="ic_home_send" width="512" height="512"/>
+        <image name="ic_my_upload" width="512" height="512"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
