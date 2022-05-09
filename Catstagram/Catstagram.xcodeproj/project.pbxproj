@@ -32,6 +32,12 @@
 		A2A8F38628289D130021E525 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F38528289D130021E525 /* UserFeedModel.swift */; };
 		A2A8F38828291C9E0021E525 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F38728291C9E0021E525 /* UserFeedDataManager.swift */; };
 		A2A8F38C28292DD40021E525 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F38B28292DD40021E525 /* DeleteUserFeed.swift */; };
+		A2A8F38F28294F9F0021E525 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F38E28294F9F0021E525 /* ReelsViewController.swift */; };
+		A2A8F396282957A50021E525 /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F395282957A50021E525 /* ReelsCell.swift */; };
+		A2A8F398282959920021E525 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F397282959920021E525 /* VideoPlayerView.swift */; };
+		A2A8F39A282962F00021E525 /* dummyVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A2A8F399282962F00021E525 /* dummyVideo.mp4 */; };
+		A2A8F39D282962FC0021E525 /* dummyVideo02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A2A8F39B282962FB0021E525 /* dummyVideo02.mp4 */; };
+		A2A8F39E282962FC0021E525 /* dummyVideo03.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A2A8F39C282962FC0021E525 /* dummyVideo03.mp4 */; };
 		A2EBA77E281E93D40023197C /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EBA77C281E93D40023197C /* StoryCollectionViewCell.swift */; };
 		A2EBA77F281E93D40023197C /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EBA77D281E93D40023197C /* StoryCollectionViewCell.xib */; };
 		A2EBA782281E9EA40023197C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EBA781281E9EA40023197C /* ProfileViewController.swift */; };
@@ -73,6 +79,12 @@
 		A2A8F38528289D130021E525 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		A2A8F38728291C9E0021E525 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		A2A8F38B28292DD40021E525 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
+		A2A8F38E28294F9F0021E525 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		A2A8F395282957A50021E525 /* ReelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCell.swift; sourceTree = "<group>"; };
+		A2A8F397282959920021E525 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		A2A8F399282962F00021E525 /* dummyVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummyVideo.mp4; sourceTree = "<group>"; };
+		A2A8F39B282962FB0021E525 /* dummyVideo02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummyVideo02.mp4; sourceTree = "<group>"; };
+		A2A8F39C282962FC0021E525 /* dummyVideo03.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummyVideo03.mp4; sourceTree = "<group>"; };
 		A2EBA77C281E93D40023197C /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2EBA77D281E93D40023197C /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		A2EBA781281E9EA40023197C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +169,9 @@
 				A27D33BA27F488FC006DF550 /* UIView+Extension.swift */,
 				A27D33BC27F594F0006DF550 /* UIViewController+Extension.swift */,
 				A27D33C027F6E647006DF550 /* UserInfo.swift */,
+				A2A8F399282962F00021E525 /* dummyVideo.mp4 */,
+				A2A8F39B282962FB0021E525 /* dummyVideo02.mp4 */,
+				A2A8F39C282962FC0021E525 /* dummyVideo03.mp4 */,
 			);
 			path = Catstagram;
 			sourceTree = "<group>";
@@ -202,9 +217,10 @@
 		A2A8F38328289A3D0021E525 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				A2A8F38228289A220021E525 /* Authentication */,
 				A211D12E281D7DFE0048331A /* Home */,
 				A2EBA780281E9E8B0023197C /* Profile */,
-				A2A8F38228289A220021E525 /* Authentication */,
+				A2A8F38D28294F6E0021E525 /* Reels */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -233,6 +249,24 @@
 				A2A8F38B28292DD40021E525 /* DeleteUserFeed.swift */,
 			);
 			path = DeleteUserFeed;
+			sourceTree = "<group>";
+		};
+		A2A8F38D28294F6E0021E525 /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				A2A8F390282950360021E525 /* Cell */,
+				A2A8F38E28294F9F0021E525 /* ReelsViewController.swift */,
+				A2A8F397282959920021E525 /* VideoPlayerView.swift */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		A2A8F390282950360021E525 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A2A8F395282957A50021E525 /* ReelsCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A2EBA780281E9E8B0023197C /* Profile */ = {
@@ -343,7 +377,10 @@
 			files = (
 				A2EBA78D281EACC70023197C /* PostCollectionViewCell.xib in Resources */,
 				A27078E727EDDBD000A2E952 /* LaunchScreen.storyboard in Resources */,
+				A2A8F39D282962FC0021E525 /* dummyVideo02.mp4 in Resources */,
 				A211D13A281E11A80048331A /* FeedTableViewCell.xib in Resources */,
+				A2A8F39A282962F00021E525 /* dummyVideo.mp4 in Resources */,
+				A2A8F39E282962FC0021E525 /* dummyVideo03.mp4 in Resources */,
 				A27078E427EDDBD000A2E952 /* Assets.xcassets in Resources */,
 				A2EBA787281EA1E30023197C /* ProfileCollectionViewCell.xib in Resources */,
 				A211D13E281E273C0048331A /* StoryTableViewCell.xib in Resources */,
@@ -414,14 +451,17 @@
 				A2EBA78C281EACC70023197C /* PostCollectionViewCell.swift in Sources */,
 				A27078DB27EDDBCC00A2E952 /* AppDelegate.swift in Sources */,
 				A27D33C127F6E647006DF550 /* UserInfo.swift in Sources */,
+				A2A8F396282957A50021E525 /* ReelsCell.swift in Sources */,
 				A211D130281D7E2E0048331A /* HomeViewController.swift in Sources */,
 				A2A8F38028288F5A0021E525 /* FeedUploadDataManager.swift in Sources */,
 				A27078DD27EDDBCC00A2E952 /* SceneDelegate.swift in Sources */,
+				A2A8F38F28294F9F0021E525 /* ReelsViewController.swift in Sources */,
 				A27D33BB27F488FC006DF550 /* UIView+Extension.swift in Sources */,
 				A2A8F37528280E2C0021E525 /* FeedAPIInput.swift in Sources */,
 				A2EBA786281EA1E30023197C /* ProfileCollectionViewCell.swift in Sources */,
 				A2EBA782281E9EA40023197C /* ProfileViewController.swift in Sources */,
 				A2A8F37928280F0D0021E525 /* FeedDataManager.swift in Sources */,
+				A2A8F398282959920021E525 /* VideoPlayerView.swift in Sources */,
 				A2A8F38C28292DD40021E525 /* DeleteUserFeed.swift in Sources */,
 				A27D33B927F468D7006DF550 /* RegisterViewController.swift in Sources */,
 				A211D139281E11A80048331A /* FeedTableViewCell.swift in Sources */,
