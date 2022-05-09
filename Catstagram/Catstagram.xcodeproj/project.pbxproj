@@ -30,6 +30,8 @@
 		A2A8F37E28288CFE0021E525 /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F37D28288CFE0021E525 /* FeedUploadModel.swift */; };
 		A2A8F38028288F5A0021E525 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F37F28288F5A0021E525 /* FeedUploadDataManager.swift */; };
 		A2A8F38628289D130021E525 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F38528289D130021E525 /* UserFeedModel.swift */; };
+		A2A8F38828291C9E0021E525 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F38728291C9E0021E525 /* UserFeedDataManager.swift */; };
+		A2A8F38C28292DD40021E525 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F38B28292DD40021E525 /* DeleteUserFeed.swift */; };
 		A2EBA77E281E93D40023197C /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EBA77C281E93D40023197C /* StoryCollectionViewCell.swift */; };
 		A2EBA77F281E93D40023197C /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EBA77D281E93D40023197C /* StoryCollectionViewCell.xib */; };
 		A2EBA782281E9EA40023197C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EBA781281E9EA40023197C /* ProfileViewController.swift */; };
@@ -69,6 +71,8 @@
 		A2A8F37D28288CFE0021E525 /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
 		A2A8F37F28288F5A0021E525 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
 		A2A8F38528289D130021E525 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		A2A8F38728291C9E0021E525 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
+		A2A8F38B28292DD40021E525 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
 		A2EBA77C281E93D40023197C /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2EBA77D281E93D40023197C /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		A2EBA781281E9EA40023197C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -198,8 +202,8 @@
 		A2A8F38328289A3D0021E525 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				A2EBA780281E9E8B0023197C /* Profile */,
 				A211D12E281D7DFE0048331A /* Home */,
+				A2EBA780281E9E8B0023197C /* Profile */,
 				A2A8F38228289A220021E525 /* Authentication */,
 			);
 			path = UserInterface;
@@ -208,9 +212,27 @@
 		A2A8F38428289CF70021E525 /* UserFeedDataManager */ = {
 			isa = PBXGroup;
 			children = (
-				A2A8F38528289D130021E525 /* UserFeedModel.swift */,
+				A2A8F38728291C9E0021E525 /* UserFeedDataManager.swift */,
+				A2A8F38A28292DAA0021E525 /* DeleteUserFeed */,
+				A2A8F38928292D940021E525 /* UserFeed */,
 			);
 			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
+		A2A8F38928292D940021E525 /* UserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				A2A8F38528289D130021E525 /* UserFeedModel.swift */,
+			);
+			path = UserFeed;
+			sourceTree = "<group>";
+		};
+		A2A8F38A28292DAA0021E525 /* DeleteUserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				A2A8F38B28292DD40021E525 /* DeleteUserFeed.swift */,
+			);
+			path = DeleteUserFeed;
 			sourceTree = "<group>";
 		};
 		A2EBA780281E9E8B0023197C /* Profile */ = {
@@ -382,6 +404,7 @@
 				A27D33BF27F66F34006DF550 /* UIColor+Extension.swift in Sources */,
 				A27D33BD27F594F0006DF550 /* UIViewController+Extension.swift in Sources */,
 				A2A8F37E28288CFE0021E525 /* FeedUploadModel.swift in Sources */,
+				A2A8F38828291C9E0021E525 /* UserFeedDataManager.swift in Sources */,
 				A2A8F37728280EBB0021E525 /* FeedModel.swift in Sources */,
 				A27D33B727F45AB3006DF550 /* LoginViewController.swift in Sources */,
 				A2A8F37C28288CAC0021E525 /* FeedUploadInput.swift in Sources */,
@@ -399,6 +422,7 @@
 				A2EBA786281EA1E30023197C /* ProfileCollectionViewCell.swift in Sources */,
 				A2EBA782281E9EA40023197C /* ProfileViewController.swift in Sources */,
 				A2A8F37928280F0D0021E525 /* FeedDataManager.swift in Sources */,
+				A2A8F38C28292DD40021E525 /* DeleteUserFeed.swift in Sources */,
 				A27D33B927F468D7006DF550 /* RegisterViewController.swift in Sources */,
 				A211D139281E11A80048331A /* FeedTableViewCell.swift in Sources */,
 			);

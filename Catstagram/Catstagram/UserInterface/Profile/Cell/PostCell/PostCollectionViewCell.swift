@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PostCollectionViewCell: UICollectionViewCell {
 
@@ -15,11 +16,17 @@ class PostCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        setupData()
     }
 
-    public func setupData() {
+    public func setupData(_ imageUrlString: String?) {
         // 이미지뷰의 이미지를 업로드한다.
         
+        guard let imageUrlString = imageUrlString else { return }
+        if let url = URL(string: imageUrlString) {
+            postImageView.kf.setImage(
+                with: url,
+                placeholder: UIImage(systemName: "photo"))
+        }
+
     }
 }
