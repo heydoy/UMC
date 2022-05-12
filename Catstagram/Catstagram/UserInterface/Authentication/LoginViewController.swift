@@ -49,24 +49,7 @@ class LoginViewController: UIViewController {
         self.password = text
     }
     
-    @IBAction func loginButtonDidTapped(_ sender: UIButton) {
-        // 회원가입 정보를 전달받아서 그것과 Text Field 데이터가 일치하면 로그인이 되어야 한다.
-        guard let userInfo = self.userInfo else {
-            return
-        }  // userInfo에 정보가 없으면 로그인버튼이 실행 안됨.
-        
-        // 아이디, 비밀번호 확인
-        if userInfo.email == self.email
-            && userInfo.password == self.password {
-            // print("다음화면으로 이동")
-            let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true, completion: nil)
-            
-        } else {
-            print("아이디 또는 패스워드가 일치하지 않습니다.")
-        }
-    }
+
     
     @IBAction func registerButtonDidTapped(_ sender: UIButton) {
         // 화면전환
