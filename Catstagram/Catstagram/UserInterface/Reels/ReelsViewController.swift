@@ -87,8 +87,12 @@ extension ReelsViewController: UICollectionViewDelegate, UICollectionViewDataSou
         return cell
     }
     
-    
-    
+    // 메모리관리
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCell {
+            cell.videoView?.cleanup()
+        }
+    }
     
     
     
